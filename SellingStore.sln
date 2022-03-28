@@ -66,6 +66,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentService", "PaymentSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentService.Api", "src\Services\PaymentService\PaymentService.Api\PaymentService.Api.csproj", "{FD7802AF-3C22-4B80-84B6-88702822076D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{262A517A-2FA0-496C-B4ED-DE9DC70A4235}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{2782FB45-36C5-493A-A9C9-79337AEAB5A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.UnitTest", "tests\BuildingBlocks\EventBus.UnitTest\EventBus.UnitTest.csproj", "{44646173-4FB5-49B2-9FA7-89D111EA7CCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{B4978442-E7A3-4F7B-B375-2581A425ABB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{FAA77C01-9647-422E-A247-D6A598E5B1D1}"
+	ProjectSection(SolutionItems) = preProject
+		OrderCreatedIntegrationEvent.cs = OrderCreatedIntegrationEvent.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventHandlers", "EventHandlers", "{700AB7AD-E4EC-4F08-9A7B-8529043505D2}"
+	ProjectSection(SolutionItems) = preProject
+		OrderCreatedEventHandler.cs = OrderCreatedEventHandler.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,6 +150,10 @@ Global
 		{FD7802AF-3C22-4B80-84B6-88702822076D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD7802AF-3C22-4B80-84B6-88702822076D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD7802AF-3C22-4B80-84B6-88702822076D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44646173-4FB5-49B2-9FA7-89D111EA7CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44646173-4FB5-49B2-9FA7-89D111EA7CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44646173-4FB5-49B2-9FA7-89D111EA7CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44646173-4FB5-49B2-9FA7-89D111EA7CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +187,11 @@ Global
 		{8EA6AF7E-33B0-41EC-83BE-F34CF21EFF2D} = {DEA1E903-F70F-4D69-BAF0-D07035352117}
 		{44E4801F-A3EB-489D-98E4-D181D5251154} = {5BD4FC22-1999-4936-9E2D-B9DC810317D2}
 		{FD7802AF-3C22-4B80-84B6-88702822076D} = {44E4801F-A3EB-489D-98E4-D181D5251154}
+		{2782FB45-36C5-493A-A9C9-79337AEAB5A7} = {262A517A-2FA0-496C-B4ED-DE9DC70A4235}
+		{44646173-4FB5-49B2-9FA7-89D111EA7CCD} = {2782FB45-36C5-493A-A9C9-79337AEAB5A7}
+		{B4978442-E7A3-4F7B-B375-2581A425ABB4} = {2782FB45-36C5-493A-A9C9-79337AEAB5A7}
+		{FAA77C01-9647-422E-A247-D6A598E5B1D1} = {B4978442-E7A3-4F7B-B375-2581A425ABB4}
+		{700AB7AD-E4EC-4F08-9A7B-8529043505D2} = {B4978442-E7A3-4F7B-B375-2581A425ABB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6BB24A43-FADF-43DC-B9BA-5AE241133A6B}
