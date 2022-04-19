@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "507adc1d-fe7c-4114-8bbd-2221b88f9def": {
+      "ProjectGuid": "507adc1d-fe7c-4114-8bbd-2221b88f9def",
+      "DisplayName": "CatologService.Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
